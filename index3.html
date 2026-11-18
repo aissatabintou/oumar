@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style3.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <h1>ou</h1>
+                <p> oumra prestige</p>
+            </div>
+            <div class="liste">
+                <a href="accueil.html">Accueil</a>
+                <a href="a propos.html">A propos</a>
+                <a href="reservation.html">Reservation</a>
+                <a href="">Contact</a>
+                <a href="" class="display_none">connexion</a>
+                <a href="" class="display_none">s'incrire</a>
+            </div>
+            <img src="image/icornes/icon-menu.svg" alt="" class="menu">
+            <div class="btn">
+                <button class="btn1"><a href="">Connexion</a></button>
+                <button class="btn2"><a href="">S'incrire</a></button>
+            </div>
+        </div>
+        </header>
+        <main>
+            <div class="block1">
+                <h1>Reservez votre oumra</h1>
+                <p>Commencer votre voyage spirituel avec nous</p>
+            </div>
+            <div class="formulaire">
+                <form action="" method="post">
+                    <div class="div_text">
+                        <p><span class="span1_p">1</span>
+                            <span class="span2_p">information personnelles</span>
+                        </p>
+                    </div>
+                    <div class="champ1">
+                        <div class="premier">
+                            <label for="nom">Nom *</label>
+                            <input type="text" placeholder="Votre nom">
+                        </div>
+                        <div class="premier">
+                            <label for="prenom">Prenom *</label>
+                            <input type="text" placeholder="Votre prenom">
+                        </div>
+                    </div>
+                    <div class="champ1">
+                        <div class="premier">
+                            <label for="mail">Email *</label>
+                            <input type="email" placeholder="Votre_email@exemple.ne">
+                        </div>
+                        <div class="premier">
+                            <label for="tel">Telephone *</label>
+                            <input type="number" placeholder="+227 12 34 56 76">
+                        </div>
+                    </div>
+                    <div class="div_text">
+                        <p><span class="span1_p">2</span>
+                            <span class="span2_p">Details du voyage</span>
+                        </p>
+                    </div>
+                    <div class="champ1">
+                        <div class="premier">
+                            <label for="choix">Type de formulaire *</label>
+                            <select name="" id="" placeholder="Choisir une formule">
+                                <option value="" disabled selected></option>
+                                <option value="">A</option>
+                                <option value="">B</option>
+                                <option value="">C</option>
+                            </select>
+                        </div>
+                        <div class="premier">
+                            <label for="choix">Duree du sejour *</label>
+                            <select name="" id="">
+                                <option value="" disabled selected></option>
+                                <option value="">A</option>
+                                <option value="">B</option>
+                                <option value="">C</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="champ1">
+                        <div class="premier">
+                            <label for="date">Date de depart *</label>
+                            <input type="date">
+                        </div>
+                        <div class="premier">
+                            <label for="">Nombre de personne *</label>
+                            <input type="number">
+                        </div>
+                    </div>
+                    <div class="champ1">
+                        <div class="premier" id="commmentaire">
+                            <label for="Aeroport">Aeroport de depart *</label>
+                            <select name="" id="Aeroport" aria-placeholder="Entre votre aeroport">
+                                <option value="" disabled selected></option>
+                                <option value="">A</option>
+                                <option value="">B</option>
+                                <option value="">C</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="div_text">
+                        <p><span class="span1_p">3</span>
+                            <span class="span2_p">Options supplementaires</span>
+                        </p>
+                    </div>
+                    <div class="champ2">
+                        <input type="checkbox">
+                        <label for="">
+                            <span class="blod">Assistance visa</span>
+                            <span>nous nous occupons de toutes les demarches administratives(+100$)</span>
+                        </label>
+                    </div>
+                    <div class="champ2">
+                        <input type="checkbox">
+                        <label for="">
+                            <span class="blod">Assistance voyage</span>
+                            <span>protection complete pendant votre sejour (+100$)</span>
+                        </label>
+                    </div>
+                    <div class="champ2">
+                        <input type="checkbox">
+                        <label for="">
+                            <span class="blod">Guide prive</span>
+                            <span>accompagnement personnalise exclusif (+100$)</span>
+                        </label>
+                    </div>
+                     <div class="champ2">
+                        <input type="checkbox">
+                        <label for="">
+                            <span class="blod">Chambre individuelle</span>
+                            <span>supplement chambre single (+100$)</span>
+                        </label>
+                    </div>
+                    <div class="champ3">
+                        <label for="info">Demandes speciales ou informatios complementaires</label>
+                        <textarea name="info" id="info" placeholder="Allergies alimentaires,besoins medicaux,preferences particulieres..."></textarea>
+                    </div>
+                    <div class="champ4">
+                        <h3>Recapitulatif</h3>
+                        <p class="prix">
+                            <span>Prix total estime:</span>
+                            <span class="prix_span">0$</span>
+                        </p>
+                        <p>Prix definitif confirme apres validation</p>
+                    </div>
+                    <div class="champ5">
+                        <input type="checkbox">
+                        <label for="">
+                            J'accepte les conditions generales de vente et la politique de confidentialite
+                        </label>
+                        <div class="conferme">
+                            <input type="checkbox" checked>
+                            <label for="">Confirmer ma reservation</label>
+                        </div>
+                        <div class="securite">
+                            <img src="image/icornes/lock-fill.svg" alt="">
+                            <p>Paiement securise-Vos donnees sont proteges</p>
+                        </div>
+                    </div>
+
+
+
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div class="footer">
+                <div class="block1_footer">
+                    <h1>Oumra prestige</h1>
+                    <p>Votre partenaire de confiance pour un <br>
+                        voyage spirituel inoubliable vers <br>la mecque.</p>
+                </div>
+                <div class="block2_footer">
+                    <h1>Liens rapides</h1>
+                    <div class="lien">
+                        <a href="">Accueil</a>
+                        <a href="">A propos</a>
+                        <a href="">Reservation</a>
+                        <a href="">Contact</a>
+                    </div>
+                </div>
+                <div class="block3_footer">
+                    <h1>Contact</h1>
+                    <div class="icorne">
+                        <img src="/image/icornes/telephone-fill.svg" alt="">
+                        <img src="/image/icornes/icon-mail.svg" alt="">
+                        <img src="/image/icornes/.svg" alt="">
+                    </div>
+                </div>
+                <div class="block4_footer">
+                    <h1>Suivez-nous</h1>
+                    <div class="reseaux">
+                        <img src="/image/icornes/icon-facebook.svg" alt="">
+                        <img src="image/icornes/linkedin.svg" alt="">
+                        <img src="image/icornes/instagram.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pied">
+                <p>@2026 Oumra prestige tout droits reserves</p>
+            </div>
+        </footer>
+    </div>
+
+
+         <script>
+    let menu = document.querySelector(".menu")
+        let liste=document.querySelector(".liste")
+        menu.addEventListener("click",
+      function () {
+        liste.classList.toggle("active")
+      }
+    );
+    </script>
+
+</body>
+
+</html>
