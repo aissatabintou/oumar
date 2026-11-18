@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="contaire">
+        <header>
+            <div class="navbar">
+                <div class="logo">
+                    <h1>ou</h1>
+                    <p> oumra prestige</p>
+                </div>
+                    <img src="/image/icornes/icon-menu.svg" alt="" class="menu">
+                <div class="liste">
+                    <a href="accueil.html">accueil</a>
+                    <a href="a propos.html">à propos</a>
+                    <a href="">reservation</a>
+                    <a href="">contact</a>
+                    <a href="" class="display_none">connexion</a>
+                    <a href="" class="display_none">s'incrire</a>
+                </div>
+                <div class="btn">
+                    <button class="btn1"><a href="">connexion</a></button>
+                    <button class="btn2"><a href="">s'incrire</a></button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="block1">
+                <h1>bienvenu chez oumra prestige</h1>
+                <p>Votre voyage spirituel vers la Mescque, organise avec excellence</p>
+                <button>Réserver maintenant</button>
+            </div>
+            <div class="block2">
+                <h2>Nos Services à d'Excellence</h2>
+                <div class="carre">
+                    <div class="carre1" id="carre2">
+                        <img src="/image/icornes/flower1.svg" alt="" id="img1">
+                        <h3 class="orange">Formule Personnalisees</h3>
+                        <p>Des packages adaptes à vos besoins du confort <br> stansadant au prestige vip</p>
+                    </div>
+
+                    <div class="carre1" id="carre3">
+                        <img src="/image/icornes/shield-shaded.svg" alt="" id="img2">
+                        <h3 class="vert">Accompagnement Complet </h3>
+                        <p>Des guides experimentes vous accompagnant <br> tout au long de votre voyage spirituel.</p>
+                    </div>
+
+                    <div class="carre1" id="carre4">
+                        <img src="/image/icornes/card-list.svg" alt="" id="img3">
+                        <h3 class="blue">Hotels de qualite</h3>
+                        <p>Hebergements confortables à proximite des lieux <br> saines pour votre serenites</p>
+                    </div>
+                </div>
+            </div>
+            <div class="block3">
+                <div class="Temoingne">
+                    <h2>Temoingnages de nos pelerins</h2>
+                    <div class="pelerin">
+                        <div class="pelerin1">
+                            <div class="logo2">
+                                <h1>FZ</h1>
+                                <p><span class="FZ">fatima Z</span>
+                                    <span>Mars 2024</span>
+                                </p>
+                            </div>
+                            <div class="commentaire">
+                                <p>"Une experience inoubliable.l'organisation etait parfaite et l'equipe tres <br>
+                                    professionnelle.je recommande vivement Oumra prestige".</p>
+                            </div>
+                        </div>
+
+                        <div class="pelerin1">
+                            <div class="logo2">
+                                <h1 id="AM">AM</h1>
+                                <p><span class="FZ">Ahmed M.</span>
+                                    <span>Mars 2024</span>
+                                </p>
+                            </div>
+                            <div class="commentaire">
+                                <p>"Merci à toute l'equipe pour ce voyage spirituel memorable.tout etait bien
+                                    planifie.<br>
+                                    de l'hebergement aux transports."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer">
+                <div class="block1_footer">
+                    <h1>Oumra prestige</h1>
+                    <p>Votre partenaire de confiance pour un <br>
+                        voyage spirituel inoubliable vers <br>la mecque.</p>
+                </div>
+                <div class="block2_footer">
+                    <h1>Liens rapides</h1>
+                    <div class="lien">
+                        <a href="">Accueil</a>
+                        <a href="">A propos</a>
+                        <a href="">Reservation</a>
+                        <a href="">Contact</a>
+                    </div>
+                </div>
+                <div class="block3_footer">
+                    <h1>Contact</h1>
+                    <div class="icorne">
+                        <img src="/image/icornes/telephone-fill.svg" alt="">
+                        <img src="/image/icornes/icon-mail.svg" alt="">
+                        <img src="/image/icornes/.svg" alt="">
+                    </div>
+                </div>
+                <div class="block4_footer">
+                    <h1>Suivez-nous</h1>
+                    <div class="reseaux">
+                        <img src="/image/icornes/icon-facebook.svg" alt="">
+                        <img src="image/icornes/linkedin.svg" alt="">
+                        <img src="image/icornes/instagram.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pied">
+                <p>@2026 Oumra prestige tout droits reserves</p>
+            </div>
+        </footer>
+    </div>
+    <script>
+    let menu = document.querySelector(".menu")
+        let liste=document.querySelector(".liste")
+        menu.addEventListener("click",
+      function () {
+        liste.classList.toggle("active")
+      }
+    );
+    </script>
+
+</body>
+
+</html>
