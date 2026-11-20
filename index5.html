@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style5.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="navbar">
+                <div class="logo">
+                    <h1>ou</h1>
+                    <p> oumra prestige</p>
+                </div>
+                <div class="liste">
+                    <a href="index1.html">Accueil</a>
+                    <a href="infex2.html">A propos</a>
+                    <a href="index3.html">Reservation</a>
+                    <a href="index4.html">Contact</a>
+                    <a href="index6.html" class="display_none">connexion</a>
+                    <a href="index5.html" class="display_none">s'incrire</a>
+                </div>
+                <img src="image/icornes/icon-menu.svg" alt="" class="menu">
+                <div class="btn">
+                    <button class="btn1"><a href="index6.html">Connexion</a></button>
+                    <button class="btn2"><a href="index5.html">S'incrire</a></button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="formulaire">
+                <form action="">
+                    <div class="entete">
+                        <img src="image/icorne2/person.svg" alt="">
+                        <h2>Creer un compte</h2>
+                        <p>Rejoignez la communaute Oumra prestige</p>
+                    </div>
+                    <div class="champ1">
+                        <div class="premier">
+                            <label for="">Nom</label>
+                            <input type="text" placeholder="Votre nom">
+                        </div>
+                    </div>
+                    <div class="champ1">
+                        <div class="premier">
+                            <label for="">prenom</label>
+                            <input type="text" placeholder="Votre prenom">
+                        </div>
+                    </div>
+                    <div class="champ1">
+                        <div class="premier">
+                            <label for="">Email</label>
+                            <input type="email" placeholder="Votre email">
+                        </div>
+                    </div>
+                    <div class="champ1">
+                        <div class="premier">
+                            <label for="">Telephone</label>
+                            <input type="text" placeholder="+33 6 12 34 56 78">
+                        </div>
+                    </div>
+                    <div class="champ1">
+                        <div class="premier">
+                            <label for="">Mot de passe</label>
+                            <input type="password">
+                            <p>Minimum 8 carecteres</p>
+                        </div>
+                    </div>
+                    <div class="champ1">
+                        <div class="premier">
+                            <label for="">Conforme le mot de passe</label>
+                            <input type="password">
+                        </div>
+                    </div>
+                    <div class="champ2">
+                        <input type="checkbox">
+                        <label for="">J'accepte les
+                            <span>conditions d'utilisation</span>
+                            et la
+                            <span>politique de confidentialite</span>
+                        </label>
+                    </div>
+                    <div class="champ3">
+                        <button type="submit">
+                            S'incrire
+                        </button>
+                        <p>Vous avez deja un compte?Se connecter</p>
+                    </div>
+                </form>
+            <p>En vous inscrivant,vous rejoignez une communaute de milliers de pelerins</p>
+
+            </div>
+
+        </main>
+    </div>
+
+      <script>
+        let menu = document.querySelector(".menu")
+        let liste = document.querySelector(".liste")
+        menu.addEventListener("click",
+            function () {
+                liste.classList.toggle("active")
+            }
+        );
+    </script>
+
+</body>
+
+</html>

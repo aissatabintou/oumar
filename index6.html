@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style6.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="navbar">
+                <div class="logo">
+                    <h1>ou</h1>
+                    <p> oumra prestige</p>
+                </div>
+                <div class="liste">
+                    <a href="index1.html">Accueil</a>
+                    <a href="infex2.html">A propos</a>
+                    <a href="index3.html">Reservation</a>
+                    <a href="index4.html">Contact</a>
+                    <a href="index6.html" class="display_none">connexion</a>
+                    <a href="index5.html" class="display_none">s'incrire</a>
+                </div>
+                <img src="image/icornes/icon-menu.svg" alt="" class="menu">
+                <div class="btn">
+                    <button class="btn1"><a href="index6.html">Connexion</a></button>
+                    <button class="btn2"><a href="index5.html">S'incrire</a></button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="formulaire">
+                <form action="">
+                    <div class="entete">
+                        <img src="image/icorne2/person.svg" alt="">
+                        <h2>Bon retour !</h2>
+                        <p>Connectz-vous à votre compte</p>
+                    </div>
+                    <div class="champ1">
+                        <div class="premier">
+                            <label for="">Email</label>
+                            <input type="email" placeholder="Votre email">
+                        </div>
+                    </div>
+
+                    <div class="champ1">
+                        <div class="premier">
+                            <label for="">Mot de passe</label>
+                            <input type="password">
+                        </div>
+                    </div>
+
+                    <div class="champ2">
+                        <input type="checkbox">
+                        <label for="">
+                            <span>Se souvenir</span>
+                            <span class="left">Mot de passe oublie?</span>
+                        </label>
+                    </div>
+                    <div class="champ3">
+                        <button type="submit">
+                            Se connecter
+                        </button>
+                    </div>
+                    <div class="champ5"><span>ou</span></div>
+                    <div class="champ4">
+                        <button>
+                            <img src="" alt="">
+                            <p>Continuer avec Google</p>
+                        </button>
+                          <button>
+                            <img src="image/icorne2/facebook.svg" alt="">
+                            <p>Continuer avec Facebook</p>
+                        </button>
+                        <p>Vous n'avez pas de compte?
+                            <span>S'incrire</span></p>
+                    </div>
+                </form>
+                <div class="footer">
+                    <img src="image/icornes/lock-fill.svg" alt="">
+                    <p>Connexion securise et crypte</p>
+                </div>
+
+
+            </div>
+
+        </main>
+    </div>
+
+    <script>
+        let menu = document.querySelector(".menu")
+        let liste = document.querySelector(".liste")
+        menu.addEventListener("click",
+            function () {
+                liste.classList.toggle("active")
+            }
+        );
+    </script>
+
+</body>
+
+</html>

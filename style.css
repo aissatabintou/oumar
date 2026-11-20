@@ -223,6 +223,7 @@ header {
 
 .pelerin1 {
     border: 1px solid black;
+    /* box-shadow: 1px 1px 5px solid; */
     padding: 30px 15px;
     border-radius: 5px;
     transition: 0.4s;

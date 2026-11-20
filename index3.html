@@ -10,25 +10,26 @@
 
 <body>
     <div class="container">
-        <div class="navbar">
-            <div class="logo">
-                <h1>ou</h1>
-                <p> oumra prestige</p>
+        <header>
+            <div class="navbar">
+                <div class="logo">
+                    <h1>ou</h1>
+                    <p> oumra prestige</p>
+                </div>
+                <div class="liste">
+                    <a href="index1.html">Accueil</a>
+                    <a href="index2.html">A propos</a>
+                    <a href="index3.html">Reservation</a>
+                    <a href="index4.html">Contact</a>
+                    <a href="index6.html" class="display_none">connexion</a>
+                    <a href="index5.html" class="display_none">s'incrire</a>
+                </div>
+                <img src="image/icornes/icon-menu.svg" alt="" class="menu">
+                <div class="btn">
+                    <button class="btn1"><a href="index6.html">Connexion</a></button>
+                    <button class="btn2"><a href="index5.html">S'incrire</a></button>
+                </div>
             </div>
-            <div class="liste">
-                <a href="index1.html">Accueil</a>
-                <a href="infex2.html">A propos</a>
-                <a href="index3.html">Reservation</a>
-                <a href="">Contact</a>
-                <a href="" class="display_none">connexion</a>
-                <a href="" class="display_none">s'incrire</a>
-            </div>
-            <img src="image/icornes/icon-menu.svg" alt="" class="menu">
-            <div class="btn">
-                <button class="btn1"><a href="">Connexion</a></button>
-                <button class="btn2"><a href="">S'incrire</a></button>
-            </div>
-        </div>
         </header>
         <main>
             <div class="block1">
@@ -134,7 +135,7 @@
                             <span>accompagnement personnalise exclusif (+100$)</span>
                         </label>
                     </div>
-                     <div class="champ2">
+                    <div class="champ2">
                         <input type="checkbox">
                         <label for="">
                             <span class="blod">Chambre individuelle</span>
@@ -143,7 +144,8 @@
                     </div>
                     <div class="champ3">
                         <label for="info">Demandes speciales ou informatios complementaires</label>
-                        <textarea name="info" id="info" placeholder="Allergies alimentaires,besoins medicaux,preferences particulieres..."></textarea>
+                        <textarea name="info" id="info"
+                            placeholder="Allergies alimentaires,besoins medicaux,preferences particulieres..."></textarea>
                     </div>
                     <div class="champ4">
                         <h3>Recapitulatif</h3>
@@ -210,14 +212,14 @@
     </div>
 
 
-         <script>
-    let menu = document.querySelector(".menu")
-        let liste=document.querySelector(".liste")
+    <script>
+        let menu = document.querySelector(".menu")
+        let liste = document.querySelector(".liste")
         menu.addEventListener("click",
-      function () {
-        liste.classList.toggle("active")
-      }
-    );
+            function () {
+                liste.classList.toggle("active")
+            }
+        );
     </script>
 
 </body>
