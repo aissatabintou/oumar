@@ -50,6 +50,7 @@ header {
     transition: 0.4s;
     color: black;
     font-size: 0.80rem;
+    text-transform: capitalize;
 }
 
 .liste a:hover {
@@ -160,35 +161,36 @@ header {
 
 .cart1:hover {
     transform: translateY(-10px);
-    box-shadow: 0 2px 5px black;
+    box-shadow: 0 0px 4px black;
 }
 
 .cart1 img {
     border-radius: 50%;
     padding: 12px;
-    background-color: orange;
+    background-color: #005AFF;
     border: none;
-    fill: white;
+    filter: invert(1);
+
 }
 
 #green {
-    background-color: green;
+    background-color: #FF7FFF;
 }
 
 #blue {
-    background-color: rgb(48, 163, 230);
+    background-color: #CF5C19;
 }
 
 #viole {
-    background-color: rgb(175, 20, 175);
+    background-color: #50EB50;
 }
 
 #red {
-    background-color: rgb(235, 24, 24);
+    background-color: #14E7E7;
 }
 
 #blue_ciel {
-    background-color: blue;
+    background-color: #FFFF00;
 }
 
 .block4 {
@@ -251,7 +253,7 @@ header {
 footer {
     background-color: black;
     padding: 50px 9%;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .footer {
@@ -260,7 +262,7 @@ footer {
 }
 
 .block1_footer h1 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: orange;
 }
 
@@ -268,13 +270,13 @@ footer {
     font-size: 0.80rem;
     color: white;
     line-height: 20px;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .block2_footer h1 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: orange;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 
 }
 
@@ -292,29 +294,49 @@ footer {
 }
 
 .block3_footer h1 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: white;
+    margin-bottom: 10px;
+
 }
 
 .icorne {
     display: flex;
     flex-direction: column;
+    gap: 5px;
+}
+
+.icorne p span {
+    color: white;
+    font-size: 0.75rem;
+}
+
+.icorne p img,
+.reseaux img {
+    filter: invert(1);
 }
 
 .block4_footer h1 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: white;
+    margin-bottom: 10px;
+}
+
+.reseaux {
+    display: flex;
+    gap: 20px;
 }
 
 .pied {
     color: white;
-    border-top: 1px solid white;
+    border-top: 0.1rem solid white;
     margin-top: 20px;
     text-align: center;
 }
 
 .pied p {
     margin-top: 15px;
+    font-size: 0.80rem;
 }
 
 @media (max-width:500px) {
@@ -355,58 +377,64 @@ footer {
     .liste.active {
         margin-left: 0;
     }
-    .btn{
-    display: none;
-   }
 
+    .btn {
+        display: none;
+    }
+    
     .display_none {
         display: block;
     }
-    .block1{
+
+    .block1 {
         text-align: center;
     }
-    .block1 h1{
+
+    .block1 h1 {
         font-size: 2rem;
     }
-    .block2{
+
+    .block2 {
         display: flex;
-        flex-direction: column-reverse;
-        
+        flex-direction: column;
+        padding: 25px 9%;
     }
-    .cart{
+
+    .p1 {
+        margin-top: 50px;
+    }
+
+    .cart {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         gap: 20px;
     }
+
     .block4 ul {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-       
+
     }
-    .block4 ul li{
+
+    .block4 ul li {
         margin-left: 0;
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
+    .span {
+        font-size: 1.5rem;
+    }
+
     .footer {
         display: flex;
         flex-direction: column;
-        gap: 10px;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .block1_footer {
-        text-align: center;
-    }
-
-    .block2_footer {
-        text-align: center;
+        gap: 12px;
     }
 
 }

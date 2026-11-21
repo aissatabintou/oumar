@@ -117,6 +117,7 @@ form {
     /* border: 1px solid black; */
     box-shadow: 0px 0px 2px black;
     padding: 30px 20px;
+    border-radius: 15px;
 }
 
 .div_text {
@@ -152,6 +153,9 @@ form {
 
 .premier input {
     padding: 5px 0;
+}
+.premier input::placeholder {
+    padding-left: 10px;
 }
 
 .premier select {
@@ -248,12 +252,15 @@ form {
     align-items: center;
     margin-top: 15px;
 }
-
+.securite img{
+    width: 10px;
+    height: 10px;
+}
 /* le footer */
 footer {
     background-color: black;
     padding: 50px 9%;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .footer {
@@ -262,7 +269,7 @@ footer {
 }
 
 .block1_footer h1 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: orange;
 }
 
@@ -270,13 +277,13 @@ footer {
     font-size: 0.80rem;
     color: white;
     line-height: 20px;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .block2_footer h1 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: orange;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 
 }
 
@@ -294,31 +301,44 @@ footer {
 }
 
 .block3_footer h1 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: white;
+    margin-bottom: 10px;
+    
 }
-
-.icorne {
+.icorne{
     display: flex;
     flex-direction: column;
+    gap: 5px;
 }
-
-.block4_footer h1 {
-    font-size: 1.2rem;
+.icorne p span{
     color: white;
+    font-size: 0.75rem;
 }
-
+.icorne p img,
+.reseaux img{
+    filter: invert(1);
+}
+.block4_footer h1 {
+    font-size: 1.1rem;
+    color: white;
+    margin-bottom: 10px;
+}
+.reseaux{
+    display: flex;
+    gap: 20px;
+}
 .pied {
     color: white;
-    border-top: 1px solid white;
+    border-top: 0.1rem solid white;
     margin-top: 20px;
     text-align: center;
 }
 
 .pied p {
     margin-top: 15px;
+    font-size: 0.80rem;
 }
-
 @media (max-width:500px) {
     form{
         width: 90%;
@@ -381,21 +401,18 @@ footer {
     .premier input {
         width: 100% ;
     }
-
+    .span1_p{
+        padding: 8px;
+    }
+    .span2_p{
+        font-size: 0.90rem;
+    }
     .footer {
         display: flex;
         flex-direction: column;
-        gap: 10px;
-        justify-content: center;
-        align-items: center;
+        gap: 12px;
+      
     }
 
-    .block1_footer {
-        text-align: center;
-    }
-
-    .block2_footer {
-        text-align: center;
-    }
 
 }

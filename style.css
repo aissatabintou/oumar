@@ -5,6 +5,7 @@
     font-family: sans-serif;
     list-style: none;
     text-decoration: none;
+    outline: none;
 }
 
 header {
@@ -50,6 +51,7 @@ header {
     transition: 0.4s;
     color: black;
     font-size: 0.80rem;
+    text-transform: capitalize;
 }
 
 .liste a:hover {
@@ -81,7 +83,7 @@ header {
 
 /* main premier block */
 .block1 {
-    background-image: url(/image/khana\ kaba\ HD\ image.jpg);
+    background-image: url(image/khana\ kaba\ HD\ image.jpg);
     background-position: center;
     background-size: cover;
     min-height: 100vh;
@@ -110,12 +112,12 @@ header {
     margin-top: 20px;
     color: white;
     background: orange;
+    transition: 1s;
     border: none;
-    transition: 0.4s;
 }
 
 .block1 button:hover {
-    transform: translateY(-10px);
+    border: 1px solid rgb(182, 120, 6);
 }
 
 .block2 {
@@ -147,19 +149,20 @@ header {
     padding: 10px;
     border-radius: 20%;
     color: white;
+    filter: invert(1);
 }
 
 #img1 {
-    background-color: orange;
+    background-color: #005AFF;
 }
 
 #img2 {
-    background-color: green;
+    background-color: #FF7FFF;
 }
 
 #img3 {
-    background-color: blue;
-}
+    background-color: #FFFF00;
+} 
 
 .carre1:hover {
     transform: translateY(-10px);
@@ -227,6 +230,7 @@ header {
     padding: 30px 15px;
     border-radius: 5px;
     transition: 0.4s;
+    background-color: white;
 }
 
 .logo2 {
@@ -274,7 +278,7 @@ header {
 footer {
     background-color: black;
     padding: 50px 9%;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .footer {
@@ -283,7 +287,7 @@ footer {
 }
 
 .block1_footer h1 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: orange;
 }
 
@@ -291,13 +295,13 @@ footer {
     font-size: 0.80rem;
     color: white;
     line-height: 20px;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .block2_footer h1 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: orange;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 
 }
 
@@ -315,20 +319,33 @@ footer {
 }
 
 .block3_footer h1 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: white;
+    margin-bottom: 10px;
+    
 }
-
-.icorne {
+.icorne{
     display: flex;
     flex-direction: column;
+    gap: 5px;
 }
-
-.block4_footer h1 {
-    font-size: 1.2rem;
+.icorne p span{
     color: white;
+    font-size: 0.75rem;
 }
-
+.icorne p img,
+.reseaux img{
+    filter: invert(1);
+}
+.block4_footer h1 {
+    font-size: 1.1rem;
+    color: white;
+    margin-bottom: 10px;
+}
+.reseaux{
+    display: flex;
+    gap: 20px;
+}
 .pied {
     color: white;
     border-top: 0.1rem solid white;
@@ -338,6 +355,7 @@ footer {
 
 .pied p {
     margin-top: 15px;
+    font-size: 0.80rem;
 }
 
 @media (max-width: 500px) {
@@ -400,15 +418,8 @@ footer {
    .footer{
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
+    gap: 12px;
    }
-   .block1_footer{
-    text-align: center;
-   }
-   .block2_footer{
-   text-align: center;
-   }
+   
 
 }
